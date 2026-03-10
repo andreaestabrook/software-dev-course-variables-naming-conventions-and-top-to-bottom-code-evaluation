@@ -5,28 +5,39 @@ In this activity, you will reinforce the skill of creating and using variables
 while practicing best practices in variable naming conventions through a hands-on,
 interactive coding challenge.
 
-The code snippet below may include:
-  - Ambiguous or incorrect variable names.
-  - Missing variables that need to be created.
-  - Scenarios that require the use of clear and descriptive variable names.
-
-You will:
-  - Identify Issues: Review the provided code and identify any variable names that:
-  - Are unclear or too vague (e.g., a, b, c).
-  - Do not follow best practices (e.g., camelCase, descriptive naming).
-  - Refactor the Code: Rename the variables and rewrite the program using descriptive names that clearly convey the variable's purpose.
-  - Enhance the Program: Add at least two additional variables to improve the program’s functionality or clarity.
-
-Things to reflect on:
-  - Why is it important to use meaningful variable names?
-  - What are the common pitfalls to avoid when naming variables?
-  - How do clear variable names benefit team collaboration?
-  
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+// Refactored version with descriptive variable names
 
-console.log(d);
+let customerName = "Alice";
+let numberOfItems = 5;
+let totalCost = 20;
+
+// Added variables
+let storeName = "Corner Market";
+let averageCostPerItem = totalCost / numberOfItems;
+
+let purchaseSummary =
+  customerName +
+  " bought " +
+  numberOfItems +
+  " items for $" +
+  totalCost +
+  " at " +
+  storeName +
+  ". Average price per item was $" +
+  averageCostPerItem +
+  ".";
+
+console.log(purchaseSummary);
+
+/*
+The original variables (a, b, c, d) were unclear and did not describe their purpose. They were replaced with descriptive names such as customerName, 
+numberOfItems, and totalCost to improve readability. 
+Two additional variables, storeName and averageCostPerItem, were added to provide more context and useful information. 
+
+Using meaningful variable names is important because they clearly describe what the data represents, making code easier to read and understand. When names are descriptive, 
+developers can quickly understand the purpose of a variable without needing extra comments. Common pitfalls include using vague names like a or data, 
+using inconsistent naming styles, or choosing names that are too long or unclear. Clear variable names also help team collaboration because other developers 
+can understand the code more quickly. This makes it easier to maintain, debug, and improve the code in larger projects.
+*/
